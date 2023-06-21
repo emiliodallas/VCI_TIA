@@ -1,0 +1,3515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2023-06-21T17:06:27.0231194Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16 Update 4</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>Soft Starter ES</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Data_Treatment</Name>
+      <Number>2</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32001" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32002" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32003" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32004" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32005" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_1" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_1" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 1</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32007" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32008" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32009" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32010" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32011" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_2" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_2" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 2</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32013" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32014" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32015" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32016" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32017" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_3" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_3" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 3</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32019" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32020" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32021" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32022" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32023" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_4" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_4" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 4</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32025" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32026" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32027" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32028" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32029" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_5" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_5" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 5</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32031" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32032" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32033" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32034" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32035" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_6" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_6" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 6</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32037" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32038" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32039" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32040" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32041" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_7" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_7" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 8</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32043" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32044" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32045" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32046" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32047" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_8" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_8" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 8</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32049" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32050" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32051" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32052" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32053" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_9" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_9" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 9</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32055" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32056" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32057" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32058" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32059" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_10" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_10" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 10</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32061" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32062" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32063" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32064" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32065" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_11" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_11" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 11</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32067" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32068" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32069" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32070" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32071" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_12" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_12" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 12</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32073" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32074" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32075" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32076" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32077" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_13" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_13" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="40" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="42" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 13</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32079" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32080" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32081" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32082" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive_1" />
+        <Component Name="Reading_Struct" />
+        <Component Name="32083" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Ligado" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Sts_Fan" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Sts_Heating" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Sts_Cooling" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Slave" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="Master" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="SP" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Extrusora_14" />
+        <Component Name="PV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Modbus_Send_Receive" />
+        <Component Name="Malfunction_14" />
+      </Symbol>
+    </Access>
+    <Call UId="38">
+      <CallInfo Name="Word_2_Bool" BlockType="FC">
+        <Parameter Name="1_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="2_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="3_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="4_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="5_registrador_in" Section="Input" Type="Word" />
+        <Parameter Name="Fancoil_Ligado" Section="Output" Type="Bool" />
+        <Parameter Name="Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Fan" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Heating" Section="Output" Type="Bool" />
+        <Parameter Name="Sts_Cooling" Section="Output" Type="Bool" />
+        <Parameter Name="Slave" Section="Output" Type="Bool" />
+        <Parameter Name="Master" Section="Output" Type="Bool" />
+        <Parameter Name="SP_Out" Section="Output" Type="Real" />
+        <Parameter Name="PV_Out" Section="Output" Type="Real" />
+        <Parameter Name="Malfunction" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="38" Name="1_registrador_in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="38" Name="2_registrador_in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="38" Name="3_registrador_in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="38" Name="4_registrador_in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="38" Name="5_registrador_in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="38" Name="Fancoil_Ligado" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="38" Name="Heating" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="38" Name="Cooling" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="38" Name="Fan" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="38" Name="Sts_Fan" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="38" Name="Sts_Heating" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="38" Name="Sts_Cooling" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="38" Name="Slave" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="38" Name="Master" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="SP_Out" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="38" Name="PV_Out" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="38" Name="Malfunction" />
+      <IdentCon UId="37" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Extrusora 14</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="49" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4A" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>
